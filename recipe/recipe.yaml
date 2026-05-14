@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: sqlfluff-templater-dbt
-  version: "4.1.0"
+  version: "4.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/sqlfluff_templater_dbt-${{ version }}.tar.gz
-  sha256: 18699aac09901d758a21c8b56236ddb6b9668517f87dd29e7b0cd1e3f4782ea6
+  sha256: b3279e0f0bc89a6c59122d0b0d47a1945cde3d68546ebe5d5c8d668f3fedbd13
 
 build:
   number: 0
