@@ -42,31 +42,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `sqlfluff-templater-dbt` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install sqlfluff-templater-dbt
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install sqlfluff-templater-dbt
 ```
 
-It is possible to list all of the versions of `sqlfluff-templater-dbt` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add sqlfluff-templater-dbt
+# for installing globally
+pixi global install sqlfluff-templater-dbt
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `sqlfluff-templater-dbt` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search sqlfluff-templater-dbt --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search sqlfluff-templater-dbt --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search sqlfluff-templater-dbt --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -78,6 +120,8 @@ mamba repoquery whoneeds sqlfluff-templater-dbt --channel conda-forge
 # List dependencies of `sqlfluff-templater-dbt`:
 mamba repoquery depends sqlfluff-templater-dbt --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
